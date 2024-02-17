@@ -14,7 +14,7 @@ services:
       - TZ=Europe/Moscow            # установка часового пояса МСК
       - DB_HOST=db
       - DB_USER=app
-      - DB_PASSWORD=:${MYSQL_PASSWORD}
+      - DB_PASSWORD=apppassword
       - DB_NAME=example
     networks:
       backend:                      # добавить в сеть backend
