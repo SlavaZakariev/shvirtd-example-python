@@ -32,7 +32,7 @@ services:
       - mysql_data:/var/lib/mysql
     environment:
       # Все параметры описываем в файле .env в папке проекта
-      - TZ=Europe/Moscow # установка часового пояса МСК
+      - TZ=Europe/Moscow
       - MYSQL_ROOT_HOST="%"
       - MYSQL_ROOT_PASSWORD:${MYSQL_ROOT_PASSWORD}
       - MYSQL_USER:${MYSQL_USER}
